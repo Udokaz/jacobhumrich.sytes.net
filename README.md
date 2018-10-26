@@ -1,6 +1,5 @@
 # jacobhumrich.sytes.net
 
-One Paragraph of project description goes here
 A personal website for me to showcase some of my skills. To practice my skills. Ths site will utilize Java, HTML, CSS, JPA, and MySQL. If others are needed they will be incorperated. It will use the Spring MVC Framework. 
 This readme is still under development
 
