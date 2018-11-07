@@ -149,3 +149,11 @@ div.date{
         padding: 3px;
         margin: 3px;
 }
+
+.map{
+    width: 33%;
+    frameborder: o;
+    height: 35vh;
+    border: 0;
+    
+}

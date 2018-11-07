@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @author jacob
  */
 @Controller
-@RequestMapping("/snowreport")
+@RequestMapping("/snowReport")
 public class SnowReportController {
     
 }
