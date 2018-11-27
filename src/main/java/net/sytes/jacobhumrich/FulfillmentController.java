@@ -6,6 +6,7 @@
 package net.sytes.jacobhumrich;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
@@ -15,5 +16,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/fulfillment")
 public class FulfillmentController {
-    
+    @GetMapping
+    public String home(){
+        return "fulfillment";
+    }
 }

@@ -1,15 +1,8 @@
-<%-- 
-    Document   : Sudoku
-    Created on : Aug 10, 2018, 2:37:43 PM
-    Author     : IT
---%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" href="${pageContext.request.contextPath}/styles/jhumrich.css" type="text/css">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+        <link type="text/css" rel="stylesheet" th:href="@{/style.css}"/>
         <title>Sudoku</title>
     </head>
     <script text="type/javascript">
@@ -190,7 +183,7 @@
         
     </script>
     <body>
-        <div><%@ include file="header.html" %></div>
+        <div></div>
         <div class="container">
             <h2>Sudoku</h2>
             <p>This is a Sudoku game that is build all in Javascript. It only has 3 different puzzles. It randomly picks one of the puzzles to display.</p>
@@ -198,15 +191,12 @@
             <h2 id="results"></h2>
             <div>
                 <table id="sudokuTable">
-                    <%
-                        
-                        
-                    %>
+                    
                 </table>
               
             </div>
                 <input type="button" value="Check" onclick="solved()">
         </div>
-		<div><%@ include file="footer.html" %></div>
+		<div></div>
     </body>
 </html>

@@ -6,6 +6,7 @@
 package net.sytes.jacobhumrich;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
@@ -13,7 +14,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @author jacob
  */
 @Controller
-@RequestMapping("/introduction")
+@RequestMapping("/intro")
 public class IntroductionController {
     
+    @GetMapping
+    public String home(){
+        return "intro";
+    }
 }

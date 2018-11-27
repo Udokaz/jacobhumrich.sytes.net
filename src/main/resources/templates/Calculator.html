@@ -1,17 +1,9 @@
-<%@page import="java.util.Stack"%>
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" href="${pageContext.request.contextPath}/styles/jhumrich.css" type="text/css">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+        <link type="text/css" rel="stylesheet" th:href="@{/style.css}"/>
 		<title>Calculator</title>
-        <%
-            String testing = (String) session.getAttribute("sessionVar1");
-            if(testing == null)
-                testing = "";
-            String result = (String) session.getAttribute("result");
-        %>
         <script>
             var inputStack = [];
             function displayInTextarea(type){
@@ -62,7 +54,7 @@
                
         <title>Calculator</title>
     </head>
-    <body><div><%@ include file="header.html" %></div>
+    <body><div></div>
         <div class="container">
             <h1>A Simple Calculator</h1>
             <p>This calculator is built using a form that sends the data to a servlet controller. The controller then sends the data to a model where it is processed and sent back.</p>

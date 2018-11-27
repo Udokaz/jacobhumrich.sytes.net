@@ -3,16 +3,20 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
     <head>
         <title>Jacob Humrich</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <link type="text/css" rel="stylesheet" th:href="@{/style.css}"/>
-        <script type="text/javascript">
-        
-        </script>
     </head>
     
     <body>
-        <form action = "/snowreport" method ="get">
-            <input type="submit" value="Snow Report" />
-        </form>
+        <div class="container">
+            <h2>Welcome</h2>
+            <p>I set this site up to showcase my skills.</p>
+            <ul>
+                <li><a th:href="@{/intro}">Introduction</a> of myself</li>
+                <li><a th:href="@{/examples}">Examples</a> of my work</li>
+            </ul>
+            <form action = "/snowreport" method ="get">
+                <input type="submit" value="Snow Report" />
+            </form>
+        </div>
     </body>
 </html>

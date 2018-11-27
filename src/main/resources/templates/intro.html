@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+        <link type="text/css" rel="stylesheet" th:href="@{/style.css}"/>
+        <title>Intro</title>
+    </head>
+    <body>
+        <div></div>
+        <div class="container">
+            <h1>About Me</h1>
+			<div id="paragraphs">
+            <p>I graduated from California State University, East Bay with a Bachelors of Science in Computer Science with an emphasis on Software Engineering in 2018. 
+                The emphasis on Software Engineering required that I take 3 extra classes. These classes were: Software Engineering 1, Software Engineering 2, and Software Testing.
+			</p>
+			<p>
+				Software Engineering 1 focused on working in a group of about 5 people creating a project from start to finish. We had to come up with our own idea. Pick any language that we wanted and then create the project. 
+				My group decided to use JavaFX to create a fulfillment system. You can learn more about it at <a th:href="@{fulfillment}">Fulfillment System</a>.
+				We wrote up a document paper, specs paper, and UMLs for the project. The class followed the waterfall approach but we coded everything in the agile approach.
+			</p>
+			<p>
+				Software Engineering 2 focused on different design patterns. All of the assignments were done in Java. I learned factory, adaptor, iterator, compound, observer, command, and template patterns.
+			</p>
+			<p>
+				Software Testing focused on using Python to test different programs. I tested the schools web-site by using Selenium. I wrote unit test to test code that was given to me that had errors in it.
+			</p>
+			</div>
+			<div id="pic">
+			</div>
+        </div>
+        <div></div>
+    </body>
+</html>
