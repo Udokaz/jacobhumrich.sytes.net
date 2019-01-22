@@ -6,35 +6,36 @@
 package net.sytes.jacobhumrich.controllers;
 
 import net.sytes.jacobhumrich.models.SnowReportModel;
+import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
 
 /**
  *
  * @author jacob
  */
 @RestController
-@RequestMapping(path = "/snowreport",
-                produces="appilication/json")
-@CrossOrigin(origins="*")
+@RequestMapping("/snowreport")
 public class SnowReportController {
     
-    
-    @GetMapping("/{location}")
-    public String getLocation(@PathVariable("location") long id){
-        SnowReportModel srm = new SnowReportModel();
-        System.out.println("calling setLocation");
-        srm.setLocation("dodgeRidge");
-        System.out.println("calling callLocation");
-        srm.callLocation();
-        System.out.println("finished calling");
-        return "snowreport";
+    @GetMapping
+    public ModelAndView getSnow(){
+        ModelAndView modelAndView = new ModelAndView("snowReport");
+        modelAndView.addObject("message", "test");
+        return modelAndView;
     }
     
+    @PostMapping("/snowreport")
+    public String getAPI(){
+        return "API";
+    }
     
+        
     
 }
