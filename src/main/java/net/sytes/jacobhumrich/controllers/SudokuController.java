@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package net.sytes.jacobhumrich;
+package net.sytes.jacobhumrich.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,12 +14,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @author jacob
  */
 @Controller
-@RequestMapping("/snowreport")
-public class SnowReportController {
-    
-    
+@RequestMapping("/sudoku")
+public class SudokuController {
     @GetMapping
     public String home(){
-        return "snowreport";
+        return "sudoku";
     }
 }
